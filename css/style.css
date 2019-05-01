@@ -352,8 +352,13 @@ ul {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   align-items: center; }
+  .nav__item {
+    height: 100%;
+    width: 100%; }
   .nav__link:link, .nav__link:visited {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
     font-size: 1.4rem;
     color: #f9f9f9;
@@ -361,6 +366,7 @@ ul {
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
     text-align: center;
+    vertical-align: middle;
     padding: 1.5rem;
     transition: 0.2s; }
   .nav__link:hover, .nav__link:active {
